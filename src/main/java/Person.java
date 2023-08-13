@@ -75,6 +75,10 @@ public class Person {
         }
     };
 
+    //Lambdas. How does it work?
+    CheckPerson lambdasCheck = (p) -> {return p.getGender() == Sex.FEMALE && p.getAge() >= 21;};
+
+
     public void printPerson() {
         //System.out.printf("%s is a %s and is %d years old found at %s.", this.getName(), this.getGender(), this.getAge());
         String print = "%s is %d years old. They are a %s. Email them at %s\n";
@@ -91,8 +95,6 @@ public class Person {
 
         //  maybe??? roster.stream().filter(p -> tester.test(p) == true).peek(System.out::println);
     }
-
-
 
 
 
