@@ -2,7 +2,7 @@ public class CheckPersonConcrete implements CheckPerson {
 
     @Override
     public boolean test(Person p) {
-        return true;
+        return (p.getBirthday() != null && p.getGender() != null);
     }
 
 }

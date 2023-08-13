@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -66,6 +67,14 @@ public class Person {
 
     }
 
+    //Check Person Anonymous Class
+    CheckPerson checkObject = new CheckPerson() {
+        @Override
+        public boolean test(Person p) {
+            return (p.getGender() != null && p.getAge() >= 21);
+        }
+    };
+
     public void printPerson() {
         //System.out.printf("%s is a %s and is %d years old found at %s.", this.getName(), this.getGender(), this.getAge());
         String print = "%s is %d years old. They are a %s. Email them at %s\n";
@@ -79,6 +88,15 @@ public class Person {
                 p.printPerson();
             }
         }
+
+        //  maybe??? roster.stream().filter(p -> tester.test(p) == true).peek(System.out::println);
     }
+
+
+
+
+
+
+
 
 }
