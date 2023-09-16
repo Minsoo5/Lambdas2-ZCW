@@ -2,6 +2,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -95,10 +96,6 @@ public class Person {
 
         //  maybe??? roster.stream().filter(p -> tester.test(p) == true).peek(System.out::println);
     }
-
-
-
-
 
 
 }
